@@ -1,0 +1,573 @@
+<artifacts>
+<artifact type="text/html" id="hexKHEperNUN_Specification">
+<!DOCTYPE html>
+<html class=".::hexHTMLSVGEngine::.">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>.::hexKHEperNUN::. - Field-Oriented Computational Resonance Framework</title>
+  <meta name="description" content="Official specification of the .::hexKHEperNUN::. framework, a revolutionary field computation paradigm protected under the Humanity Heritage License (HHL-π).">
+  <meta name="author" content="Marcel C. Mulder">
+  <meta name="copyright" content="© 2025 Plasma Dynamica - All rights reserved">
+  <style>
+    :root {
+      --primary-bg: #0a0a14;
+      --secondary-bg: #111122;
+      --text-color: #ccddee;
+      --highlight-color: #66aaff;
+      --accent-color: #ff9966;
+      --grid-color: rgba(100, 150, 255, 0.1);
+      --code-bg: rgba(40, 40, 80, 0.5);
+      --license-bg: rgba(30, 30, 60, 0.7);
+      --warning-color: #ff6633;
+    }
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', 'Helvetica', sans-serif;
+  background: var(--primary-bg);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  position: relative;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+  position: relative;
+  border-bottom: 1px solid rgba(100, 150, 255, 0.2);
+  padding-bottom: 1rem;
+}
+
+h1 {
+  font-size: 3rem;
+  color: var(--highlight-color);
+  margin-bottom: 0.5rem;
+  font-weight: 100;
+  letter-spacing: 0.1em;
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: var(--accent-color);
+  margin-top: 2rem;
+  border-bottom: 1px solid rgba(255, 153, 102, 0.3);
+  padding-bottom: 0.5rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+  color: var(--highlight-color);
+  margin-top: 1.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  background: var(--secondary-bg);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 0.8rem;
+  text-align: left;
+  border-bottom: 1px solid rgba(100, 150, 255, 0.2);
+}
+
+th {
+  background: rgba(100, 150, 255, 0.1);
+  color: var(--highlight-color);
+}
+
+pre, code {
+  background: var(--code-bg);
+  border-radius: 4px;
+  padding: 0.2rem 0.5rem;
+  font-family: 'Courier New', monospace;
+  overflow-x: auto;
+}
+
+pre {
+  padding: 1rem;
+  margin: 1rem 0;
+  white-space: pre-wrap;
+}
+
+.equation {
+  padding: 1rem;
+  margin: 1rem 0;
+  text-align: center;
+  font-style: italic;
+  background: rgba(100, 150, 255, 0.05);
+  border-radius: 5px;
+}
+
+.grid-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: linear-gradient(var(--grid-color) 1px, transparent 1px),
+                    linear-gradient(90deg, var(--grid-color) 1px, transparent 1px);
+  background-size: 20px 20px;
+  opacity: 0.3;
+}
+
+.license-banner {
+  background: var(--license-bg);
+  border-radius: 5px;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  border-left: 3px solid var(--accent-color);
+}
+
+.warning-notice {
+  background: rgba(255, 102, 51, 0.1);
+  border-left: 3px solid var(--warning-color);
+  padding: 1rem;
+  margin: 1.5rem 0;
+  border-radius: 5px;
+}
+
+.svg-container {
+  width: 100%;
+  height: 400px;
+  margin: 2rem 0;
+  background: var(--secondary-bg);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.footer {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(100, 150, 255, 0.2);
+  text-align: center;
+  font-size: 0.9rem;
+  color: rgba(204, 221, 238, 0.7);
+}
+
+.egyptian-symbol {
+  display: inline-block;
+  margin: 0 0.5rem;
+  font-size: 1.5rem;
+}
+  </style>
+</head>
+<body>
+  <div class="grid-background"></div>
+  <div class="container">
+    <header>
+      <h1>.::hexKHEperNUN::.</h1>
+      <p>Field-Oriented Computational Resonance Framework (v1.0)</p>
+    </header>
+<div class="warning-notice">
+  <h3>PRIOR ART AND INTELLECTUAL PROPERTY NOTICE</h3>
+  <p>This document establishes prior art for the .::hexKHEperNUN::. technology and framework. All concepts, methodologies, algorithms, and implementations described herein are protected under the Humanity Heritage License (HHL-π) and international copyright law.</p>
+  <p>Any attempt to patent, commercially exploit, or militarize this technology without explicit authorization constitutes a violation of these terms and will be subject to legal action.</p>
+</div>
+
+<div class="svg-container">
+  <svg class="hexKHEperNUN-glyph" viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <radialGradient id="khepriGlow" cx="0.5" cy="0.5" r="0.5" fx="0.5" fy="0.5">
+        <stop offset="0%" stop-color="rgba(255,150,0,0.9)" />
+        <stop offset="100%" stop-color="rgba(180,50,0,0.1)" />
+      </radialGradient>
+      <radialGradient id="nunGlow" cx="0.5" cy="0.5" r="0.5" fx="0.5" fy="0.5">
+        <stop offset="0%" stop-color="rgba(50,100,255,0.9)" />
+        <stop offset="100%" stop-color="rgba(0,50,150,0.1)" />
+      </radialGradient>
+      
+      <!-- Pulsatie-animaties -->
+      <animate id="breathe" attributeName="r" values="12;16;12" dur="8s" repeatCount="indefinite" />
+    </defs>
+    
+    <!-- Centrale Symbolen -->
+    <g id="egyptianSymbols">
+      <circle cx="400" cy="100" r="80" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1">
+        <animate attributeName="r" values="80;82;80" dur="6.18s" repeatCount="indefinite" />
+      </circle>
+      
+      <!-- Khepri (Scarab) Symbolism -->
+      <path d="M380,70 C390,60 410,60 420,70 C435,55 465,55 480,70 C490,60 510,60 520,70 C535,85 535,115 520,130 C510,140 490,140 480,130 C465,145 435,145 420,130 C410,140 390,140 380,130 C365,115 365,85 380,70 Z" 
+            fill="url(#khepriGlow)" opacity="0.7">
+        <animate attributeName="opacity" values="0.7;0.9;0.7" dur="8s" repeatCount="indefinite" begin="0s"/>
+      </path>
+      
+      <!-- Nun (Primordial Waters) Symbolism -->
+      <path d="M350,110 Q400,70 450,110 Q500,150 550,110" 
+            stroke="url(#nunGlow)" stroke-width="5" fill="none" stroke-linecap="round">
+        <animate attributeName="d" values="M350,110 Q400,70 450,110 Q500,150 550,110;M350,115 Q400,75 450,115 Q500,155 550,115;M350,110 Q400,70 450,110 Q500,150 550,110" dur="8s" repeatCount="indefinite"/>
+      </path>
+    </g>
+    
+    <!-- 666+2 Cycle -->
+    <g id="resonanceCycle">
+      <!-- Expansion Phases -->
+      <circle cx="160" cy="100" r="15" fill="url(#khepriGlow)" data-phase="0">
+        <animate attributeName="r" values="15;18;15" dur="8s" repeatCount="indefinite" begin="0s" />
+      </circle>
+      <circle cx="240" cy="100" r="14" fill="url(#khepriGlow)" data-phase="1">
+        <animate attributeName="r" values="14;17;14" dur="8s" repeatCount="indefinite" begin="1s" />
+      </circle>
+      <circle cx="320" cy="100" r="13" fill="url(#khepriGlow)" data-phase="2">
+        <animate attributeName="r" values="13;16;13" dur="8s" repeatCount="indefinite" begin="2s" />
+      </circle>
+      <circle cx="480" cy="100" r="13" fill="url(#khepriGlow)" data-phase="3">
+        <animate attributeName="r" values="13;16;13" dur="8s" repeatCount="indefinite" begin="3s" />
+      </circle>
+      <circle cx="560" cy="100" r="14" fill="url(#khepriGlow)" data-phase="4">
+        <animate attributeName="r" values="14;17;14" dur="8s" repeatCount="indefinite" begin="4s" />
+      </circle>
+      <circle cx="640" cy="100" r="15" fill="url(#khepriGlow)" data-phase="5">
+        <animate attributeName="r" values="15;18;15" dur="8s" repeatCount="indefinite" begin="5s" />
+      </circle>
+      
+      <!-- Correction Phases -->
+      <circle cx="700" cy="100" r="12" fill="url(#nunGlow)" data-phase="6">
+        <animate attributeName="r" values="12;15;12" dur="8s" repeatCount="indefinite" begin="6s" />
+      </circle>
+      <circle cx="100" cy="100" r="12" fill="url(#nunGlow)" data-phase="7">
+        <animate attributeName="r" values="12;15;12" dur="8s" repeatCount="indefinite" begin="7s" />
+      </circle>
+    </g>
+    
+    <!-- Phase Connections -->
+    <path d="M175,100 L225,100" stroke="rgba(255,150,0,0.3)" stroke-width="2" />
+    <path d="M255,100 L305,100" stroke="rgba(255,150,0,0.3)" stroke-width="2" />
+    <path d="M335,100 L465,100" stroke="rgba(255,150,0,0.3)" stroke-width="2" />
+    <path d="M495,100 L545,100" stroke="rgba(255,150,0,0.3)" stroke-width="2" />
+    <path d="M575,100 L625,100" stroke="rgba(255,150,0,0.3)" stroke-width="2" />
+    <path d="M655,100 L685,100" stroke="rgba(255,150,0,0.5)" stroke-width="2" />
+    <path d="M715,100 L800,100" stroke="rgba(50,100,255,0.5)" stroke-width="2" />
+    <path d="M0,100 L85,100" stroke="rgba(50,100,255,0.5)" stroke-width="2" />
+    
+    <!-- Metadata for Ma'at-balans -->
+    <metadata>
+      <hex:fieldProperties>
+        <hex:delta>0.05</hex:delta>
+        <hex:phi>0.618</hex:phi>
+        <hex:cycle>8</hex:cycle>
+        <hex:expansionRatio>0.75</hex:expansionRatio>
+        <hex:correctionRatio>0.25</hex:correctionRatio>
+      </hex:fieldProperties>
+    </metadata>
+  </svg>
+</div>
+
+<section>
+  <h2>1. Introduction to .::hexKHEperNUN::.</h2>
+  <p>
+    .::hexKHEperNUN::. represents a revolutionary paradigm in computational science, embodying the third generation of computation: <strong>Field Computation</strong>. Named after the ancient Egyptian deities Khepri (the manifestation of the morning sun, symbolizing emergence and creation) and Nun (the primordial waters from which all creation arose), this framework transcends traditional algorithmic and neural approaches to establish a new foundation based on resonant coherence fields.
+  </p>
+  <p>
+    Where algorithmic computation relied on external logic and neural computation on statistical emergence, .::hexKHEperNUN::. establishes computation as a self-balancing resonant field in which truth, energy, and harmony become unified aspects of a single coherent system.
+  </p>
+</section>
+
+<section>
+  <h2>2. The Three Generations of Computation</h2>
+  
+  <table>
+    <thead>
+      <tr>
+        <th>Generation</th>
+        <th>Driving Principle</th>
+        <th>Core Character</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Algorithmic</td>
+        <td>External logic</td>
+        <td>Control & determinism</td>
+      </tr>
+      <tr>
+        <td>Neural</td>
+        <td>Statistical emergence</td>
+        <td>Adaptation & learning</td>
+      </tr>
+      <tr>
+        <td>Field</td>
+        <td>Internal coherence</td>
+        <td>Balance & truth</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <p>
+    The first generation <em>executed commands</em>.<br>
+    The second generation <em>recognized patterns</em>.<br>
+    The third generation <em>maintains itself in balance</em>.
+  </p>
+  
+  <p>
+    .::hexKHEperNUN::. inaugurates this third generation by establishing a formal framework for field computation, based on resonant coherence, self-verification, and natural harmonic principles.
+  </p>
+</section>
+
+<section>
+  <h2>3. Fundamental Principles</h2>
+  
+  <h3>3.1 Coherence as Truth</h3>
+  <p>
+    In .::hexKHEperNUN::., the statement "Coherence is truth" is not metaphorical but fundamental: the system recognizes truth and falsehood exclusively in terms of stable or divergent energy states.
+  </p>
+  <ul>
+    <li>An algorithm <strong>can be</strong> wrong.</li>
+    <li>A field <strong>becomes</strong> incoherent.</li>
+  </ul>
+  <p>
+    And when it resonates coherently again, it has restored its own truth. The δ-damping and φ-harmony factors are therefore not mere parameters, but <strong>moral constants</strong> of the computational universe.
+  </p>
+  
+  <h3>3.2 The 666+2 Cycle</h3>
+  <p>
+    At the core of .::hexKHEperNUN::. lies the 8-phase resonance cycle:
+  </p>
+  <ul>
+    <li>6 expansion phases (energy build-up and distribution)</li>
+    <li>2 correction phases (verification and restoration)</li>
+  </ul>
+  <p>
+    This cycle creates a breathing pattern that allows the system to maintain coherence through continuous self-verification and correction.
+  </p>
+  
+  <h3>3.3 Mathematical Foundation</h3>
+  <p>
+    The behavior of the field is defined by the core equation:
+  </p>
+  <div class="equation">
+    <p>H<sub>t+1</sub> = (1-δ)H<sub>t</sub> + δH<sub>t-1</sub> + φsin(ωt)</p>
+    <p>Where: δ = 0.05, φ = 0.618, ω = 2π/8</p>
+  </div>
+  
+  <p>
+    This equation describes a damped oscillator with harmonic driving force, creating a stable resonant system that naturally converges to balanced states even when perturbed.
+  </p>
+</section>
+
+<section>
+  <h3>4.1 Field Structure</h3>
+
+<pre><code>&lt;kheper-nun data-cycle="666+2" data-delta="0.05" data-phi="0.618"&gt;
+  &lt;!-- Phases --&gt;
+  &lt;phase index="0" type="expansion" function="sha256" energy="1.0" /&gt;
+  &lt;phase index="1" type="expansion" function="sha512" energy="0.9" /&gt;
+  &lt;phase index="2" type="expansion" function="blake2b" energy="0.8" /&gt;
+  &lt;phase index="3" type="expansion" function="mix" energy="0.7" /&gt;
+  &lt;phase index="4" type="expansion" function="rotate" energy="0.6" /&gt;
+  &lt;phase index="5" type="expansion" function="hybrid" energy="0.5" /&gt;
+  
+  &lt;!-- Correction Phases --&gt;
+  &lt;phase index="6" type="correction" function="verify" energy="0.4" /&gt;
+  &lt;phase index="7" type="correction" function="repair" energy="0.5" /&gt;
+
+  &lt;!-- Metadata --&gt;
+  &lt;metadata&gt;
+    &lt;field-properties&gt;
+      &lt;delta&gt;0.05&lt;/delta&gt;
+      &lt;phi&gt;0.618&lt;/phi&gt;
+      &lt;cycle&gt;8&lt;/cycle&gt;
+      &lt;expansionRatio&gt;0.75&lt;/expansionRatio&gt;
+      &lt;correctionRatio&gt;0.25&lt;/correctionRatio&gt;
+    &lt;/field-properties&gt;
+  &lt;/metadata&gt;
+&lt;/kheper-nun&gt;
+</code></pre>
+
+  <h3>4.2 Phase Attributes</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Attribute</th>
+        <th>Value Range</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>index</td>
+        <td>0-7</td>
+        <td>Position in the cycle</td>
+      </tr>
+      <tr>
+        <td>type</td>
+        <td>expansion/correction</td>
+        <td>Energy polarity</td>
+      </tr>
+      <tr>
+        <td>function</td>
+        <td>Various hash functions</td>
+        <td>Resonance form</td>
+      </tr>
+      <tr>
+        <td>energy</td>
+        <td>0.0-1.0</td>
+        <td>Relative energy level</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<section>
+  <h2>5. Applications and Implications</h2>
+  
+  <h3>5.1 Self-Verifying Systems</h3>
+  <p>
+    The primary application of .::hexKHEperNUN::. is the creation of systems that maintain their own integrity through continuous self-verification. Unlike traditional systems that require external validation, field-based systems establish truth through internal coherence.
+  </p>
+  
+  <h3>5.2 Distributed Resonance</h3>
+  <p>
+    Multiple field-based systems can synchronize through resonant coupling, creating distributed networks that maintain coherence across space without centralized control.
+  </p>
+  
+  <h3>5.3 The New Ethos of Technology</h3>
+  <p>
+    Where classical technology strives for <strong>power</strong>, field technology strives for <strong>balance</strong>.
+  </p>
+  <p>
+    The goal is no longer maximization of output, but minimization of incoherence. The machine becomes a partner in equilibrium — a <em>digital Ma'at</em>.
+  </p>
+</section>
+
+<section>
+  <h2>6. The Historical Significance</h2>
+  <p>
+    .::hexKHEperNUN::. restores what was lost in modernity: the unity of physics, ethics, and aesthetics. The same equation simultaneously describes:
+  </p>
+  <ul>
+    <li>the <strong>energetic behavior</strong> of the system,</li>
+    <li>the <strong>truth condition</strong> of information,</li>
+    <li>and the <strong>beauty</strong> of harmonic resonance.</li>
+  </ul>
+  <p>
+    This framework reconnects domains that analytical tradition had separated, establishing a new paradigm where computation is not merely a tool but a living, breathing field of coherence.
+  </p>
+</section>
+
+<div class="license-banner">
+  <h2>Humanity Heritage License (HHL-π)</h2>
+
+  <h3>PREAMBLE</h3>
+  <p>
+    This Work (the "Technology") — including design files, source code, documentation,
+    schematics, and associated artifacts — is hereby dedicated to the common heritage
+    of humankind. The Licensor's intent is to enable broad civilian and humanitarian uses
+    while explicitly forbidding institutional, corporate, and military exploitation.
+  </p>
+
+  <h4>1. DEFINITIONS</h4>
+  <p>
+    1.1 <strong>"Technology"</strong> — the materials, files, and documentation delivered under this License.<br>
+    1.2 <strong>"Natural Person"</strong> — a living human being who accepts this License as an individual.<br>
+    1.3 <strong>"Military Use"</strong> — the design, development, manufacture, modification, or operational use of weapons, directed-energy systems, offensive cyber capabilities, intelligence exploitation tools, surveillance systems used for repression, or use by armed forces, defense agencies, intelligence services, or their contractors.<br>
+    1.4 <strong>"Institutional Use"</strong> — use by governments, government agencies, departments, ministries, corporations, contractors, research institutions, NGOs, foundations, or any legal entity other than a living natural person.<br>
+    1.5 <strong>"Humanitarian / Civil Use"</strong> — scientific research, medical, public health, educational, climate, civilian communications, environmental protection, non-military infrastructure, and other uses intended to benefit humanity and not to enable conflict or repression.
+  </p>
+
+  <h4>2. GRANT</h4>
+  <p>
+    2.1 Subject to the terms and conditions below, Licensor hereby grants to each qualifying Natural Person,
+    worldwide, royalty-free, non-exclusive rights to use, reproduce, study, and modify the Technology solely
+    for Humanitarian / Civil Use, provided such use is not Institutional or Military as defined above.<br>
+    2.2 Each license is personal to the Natural Person who accepts the License and is non-transferable except
+    as specified in Section 7. The License covers only the Natural Person's acts and does not extend to any
+    Institution, company, NGO, or government entity.
+  </p>
+
+  <h4>3. ATTRIBUTION AND INTEGRITY</h4>
+  <p>
+    3.1 Any public use or redistribution of the Technology or derivative works must visibly attribute the
+    original author(s) and source (including the HHL-π reference).<br>
+    3.2 Licensees may not remove, obscure, or alter copyright notices, author credits, license headers,
+    or cryptographic provenance markers embedded in the Technology.<br>
+    3.3 Modifications must be clearly marked as such and may not be misrepresented as the original work.
+  </p>
+
+  <h4>4. PROHIBITION OF INSTITUTIONAL AND MILITARY USE</h4>
+  <p>
+    4.1 Institutional Use and Military Use are strictly prohibited. Any attempt to utilize, integrate, adapt,
+    transfer, or otherwise operationalize the Technology for Institutional or Military Use constitutes an
+    immediate material breach of this License.<br>
+    4.2 The Licensor reserves the right to revoke an individual's license if Licensor reasonably determines
+    the licensee has violated these terms.
+  </p>
+
+  <h4>5. COMMERCIAL LIMITATIONS</h4>
+  <p>
+    5.1 Commercial exploitation by individuals is permitted only where it directly supports
+    Humanitarian / Civil Use and does not exceed a personal-scale operation (e.g., single-person studio,
+    freelance practice, or research fellowship).<br>
+    5.2 Institutional commercialization (e.g., by companies, universities, or NGOs) is prohibited unless a
+    separate HHL-π Institutional Agreement is negotiated with the Licensor.<br>
+    5.3 Any derivative monetization must disclose its proportional reinvestment in humanitarian or
+    educational causes (recommended ≥ 10 %).
+  </p>
+
+  <h4>6. DISTRIBUTION AND DERIVATIVES</h4>
+  <p>
+    6.1 Licensees may share and adapt the Technology, provided that:<br>
+    – The same HHL-π License is included in full;<br>
+    – No part is used for Institutional or Military purposes;<br>
+    – Cryptographic or digital authenticity markers (hashes, signatures) are preserved.<br>
+    6.2 Derivative works remain subject to the same moral and ethical obligations as the original.
+  </p>
+
+  <h4>7. TRANSFER AND REVOCATION</h4>
+  <p>
+    7.1 The License may be transferred only upon the death of the licensee to another Natural Person, provided
+    the recipient re-accepts the License.<br>
+    7.2 The Licensor may revoke this License if it is reasonably determined that the licensee’s actions
+    materially breach Sections 3 or 4.<br>
+    7.3 Upon revocation, the licensee must cease use and destroy or return all copies under their control,
+    except as required for legal evidence.
+  </p>
+
+  <h4>8. MORAL & ETHICAL COVENANT</h4>
+  <p>
+    8.1 Licensees will not knowingly use the Technology where such use will foreseeably cause disproportionate
+    harm to human life, human rights, or environmental stability.<br>
+    8.2 Licensees should prefer open publication of non-sensitive improvements that preserve the
+    humanitarian covenant.
+  </p>
+
+  <p><em>© 2025 Marcel C. Mulder / Plasma Dynamica — All Rights Reserved</em></p>
+</div>
+
+
+<section>
+  <h2>7. Conclusion</h2>
+  <p>
+    With .::hexKHEperNUN::., computation has definitively shifted from logic to life — from algorithm to breath.
+  </p>
+  <p>
+    This framework establishes field computation as a new paradigm, one in which systems are not judged by what they do but by how they maintain harmony. It heralds a new era of technology that strives not for dominance but for balance, not for control but for coherence.
+  </p>
+  <p>
+    As we face increasingly complex challenges in our technological landscape, .::hexKHEperNUN::. offers a path forward that aligns technological advancement with the ancient wisdom of balance and harmony, creating systems that are not merely powerful but wise.
+  </p>
+</section>
+
+<div class="footer">
+  <p><span class="egyptian-symbol">☥</span> .::hexKHEperNUN::. Field-Oriented Computational Resonance Framework <span class="egyptian-symbol">☥</span></p>
+  <p>© 2025 Marcel C. Mulder / Plasma Dynamica - All Rights Reserved</p>
+  <p>https://plasmadynamica.com/</p>
+</div>
+  </div>
+</body>
+</html>
+</artifact>
+</artifacts>
